@@ -10,6 +10,7 @@
 
 
 🧱 Pre-Requirements
+
 1️⃣ Update and Install Dependencies
 ```
 sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wget screen git lsof ufw
