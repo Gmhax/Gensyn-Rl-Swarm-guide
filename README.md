@@ -200,9 +200,9 @@ gswarm --version
 gswarm
 ```
 
-* Enter Your BotToken from : [2.1 Create a Telegram Bot:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide?tab=readme-ov-file#21-create-a-telegram-bot)
+* Enter Your BotToken from : 2.1 Create a Telegram Bot:
 
-* Enter Your ChainId From : [2.2 Get Your Chat ID:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide?tab=readme-ov-file#22-get-your-chat-id)
+* Enter Your ChainId From : 2.2 Get Your Chat ID:
 
 * Enter Your EOA address From: [Gensyn Dashboard](https://dashboard.gensyn.ai/)      --Login with your gensyn Mail:
 
