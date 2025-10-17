@@ -110,10 +110,12 @@ cp ~/rl-swarm/swarm.pem ~/swarm.pem.backup
 
 - If your process stops with Killed or Terminated:
 ```
-deactivate
-rm -rf .venv
-python3 -m venv .venv
-source .venv/bin/activate
+git stash
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
+rm -rf .venv && python3 -m venv .venv && source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
 
