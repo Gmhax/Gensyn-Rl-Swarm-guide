@@ -1,4 +1,7 @@
-💻 Gensyn AI RL-Swarm Linux Guide 💻
+# 💻 Gensyn AI RL-Swarm + Block Assist Complete Linux Guide
+
+## Comprehensive setup guide for Gensyn AI — includes full instructions for RL-Swarm node, Telegram alerts, Swarm role verification, and Block Assist role completion via Octa.Space.
+
 
 🖥️ System Requirements
 | Resource | Minimum                    | Recommended         |
