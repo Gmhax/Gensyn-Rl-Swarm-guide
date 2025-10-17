@@ -1,1 +1,287 @@
-# Gensyn-Rl-Swarm-guide
+💻 Gensyn AI RL-Swarm Linux Guide 💻
+
+🖥️ System Requirements
+| Resource | Minimum                    | Recommended         |
+| -------- | -------------------------- | ------------------- |
+| CPU      | 4 cores                    | **6 cores or more** |
+| RAM      | 8 GB                       | **16 GB**           |
+| Storage  | 100 GB SSD                 | **200–500 GB SSD**  |
+| OS       | Ubuntu 22.04 / 24.04 (x64) | Latest LTS          |
+
+
+🧱 Pre-Requirements
+1️⃣ Update and Install Dependencies
+```
+sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wget screen git lsof ufw
+```
+
+2️⃣ Install Node.js, npm & Yarn
+```
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install -y yarn
+```
+- Check versions
+```
+node -v
+npm -v
+yarn -v
+```
+
+3️⃣Add 16 GB Swap to prevent Terminated
+```
+sudo fallocate -l 16G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+- Verify swap
+```
+free -h
+```
+🚀 Run Gensyn RL-Swarm Node
+1️⃣ Create a Screen Session
+```
+screen -S gensyn
+```
+2️⃣ Clone the Repository
+```
+git clone https://github.com/gensyn-ai/rl-swarm.git
+cd rl-swarm
+```
+3️⃣ Setup Virtual Environment & Run the Node
+```
+python3 -m venv .venv
+source .venv/bin/activate
+./run_rl_swarm.sh
+```
+
+4️⃣ Follow Prompts
+
+- Push models to Hugging Face? → N
+- Enter model name or press Enter for default → just press Enter
+- Participate in AI Prediction Market? → N
+
+✅ Done! Your node is now running successfully.
+
+- CTRL A + D 
+
+## Access Web UI (http://localhost:3000)
+
+If running on VPS, use Cloudflared to access the dashboard from your browser. 
+## Open another tab on your VPS
+```
+sudo apt install -y ufw
+sudo ufw allow 22
+sudo ufw allow 3000/tcp
+sudo ufw enable
+wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo dpkg -i cloudflared-linux-amd64.deb
+cloudflared tunnel --url http://localhost:3000
+```
+- Then open the HTTPS link shown in your terminal.
+<img width="1754" height="226" alt="image" src="https://github.com/user-attachments/assets/2ae7c569-7f40-4db3-89f4-02562d076dca" />
+- Sign up gensyn acc.
+- Done ✅
+
+💾 Backup Your Node Key open another vps tab
+
+After first successful run, backup your key file:
+```
+cp ~/rl-swarm/swarm.pem ~/swarm.pem.backup
+```
+
+# FAQ & Troubleshoot
+
+⚙️ Fix “Terminated” / “Killed” Errors
+
+- If your process stops with Killed or Terminated:
+```
+deactivate
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
+./run_rl_swarm.sh
+```
+
+🧩How To Grab Your Gswarm Role:
+- You can do this process both in ubuntu or codespace
+
+</div>
+
+
+## 1. Install Go
+
+### Linux/Wsl
+
+```
+cd ~
+wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
+```
+
+```
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
+* >Verify installation
+
+```
+go version
+```
+
+
+### Mac
+
+```
+brew install go
+```
+
+
+
+## 2. Telegram Bot Set-Up 🤖
+
+> To receive notifications via Telegram, you need to set up a Telegram bot and connect it to your account:
+
+
+### 2.1 Create a Telegram Bot:
+
+* Go To  https://t.me/BotFather
+
+* Send `/newbot` and follow the instructions:
+
+* It will Ask You to enter the Name & username of the Bot: 
+
+* Now it will send the Token. Look Like this: `84100000:AAGITsRXgxxxxNuP56-xxxxxxxxxxxxxxx` dont share with anyone:
+
+
+### 2.2 Get Your Chat ID:
+
+* head to your bot which was created and send message:
+
+* Visit: https://api.telegram.org/botYOUR_BOT_TOKEN/getUpdates 
+
+* Dont Forget to replace `YOUR_BOT_TOKEN` with your: which we create in above step:
+
+* You will see your `Id` here : Save it: 
+
+* >Note: If you get an empty result {"ok":true,"result":[]}, you may need to send a message to your bot first, then refresh the URL.
+
+<img width="2196" height="253" alt="image" src="https://github.com/user-attachments/assets/3d399c11-6c10-4d80-a880-a78fd2050ebf" />
+
+
+
+
+## 3. Installation & Configure GSwarm
+
+### 1. Installation
+
+```
+go install github.com/Deep-Commit/gswarm/cmd/gswarm@latest
+```
+
+* >Verify installation:
+
+```
+gswarm --version
+```
+
+
+
+### 2. Configure GSwarm:
+
+* > We will config our Gensyn Node and telegram bot here: Will Add `bot token`, `chat ID`, and `EOA address`
+
+```
+gswarm
+```
+
+* Enter Your BotToken from : [2.1 Create a Telegram Bot:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide?tab=readme-ov-file#21-create-a-telegram-bot)
+
+* Enter Your ChainId From : [2.2 Get Your Chat ID:](https://github.com/Mayankgg01/Gensyn-ai-Rl-Swarm_Guide?tab=readme-ov-file#22-get-your-chat-id)
+
+* Enter Your EOA address From: [Gensyn Dashboard](https://dashboard.gensyn.ai/)      --Login with your gensyn Mail:
+
+
+## 4. 🔗 Linking Discord & Telegram:
+
+
+### 1. Get the verification code From Discord
+
+* In Gensyn Dc go to `swarm-link channel` 
+
+* Enter `/link-telegram` 
+
+* You will get your code from here:
+
+
+### 2. Verify the code in Telegram Bot
+
+* Go to Your bot which you creat:
+
+* type `/verify {code}` , Replace `code` with your actual one: which u got from DC:
+
+* After verify your code You will automatically get your Role:
+
+<img width="2086" height="1241" alt="image" src="https://github.com/user-attachments/assets/d8ec9220-26a7-4809-ad38-71173063260e" />
+
+
+✔️✔️✔️Done:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
