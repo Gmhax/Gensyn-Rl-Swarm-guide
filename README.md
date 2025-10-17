@@ -1,13 +1,13 @@
 # 💻 Gensyn AI RL-Swarm + Block Assist Complete Linux Guide
 
-## Comprehensive setup guide for Gensyn AI — includes full instructions for RL-Swarm node, Telegram alerts, Swarm role verification, and Block Assist role completion via Octa.Space.
+## Comprehensive setup guide for Gensyn AI  includes full instructions for RL-Swarm node, Telegram alerts, Swarm role verification, and Block Assist role completion via Octa.Space.
 
 
 🖥️ System Requirements
 | Resource | Minimum                    | Recommended         |
 | -------- | -------------------------- | ------------------- |
-| CPU      | 4 cores                    | **6 cores or more** |
-| RAM      | 8 GB                       | **16 GB**           |
+| CPU      | 6 cores                    | **12 cores or more** |
+| RAM      | 16 GB                       | **24 GB**           |
 | Storage  | 100 GB SSD                 | **200–500 GB SSD**  |
 | OS       | Ubuntu 22.04 / 24.04 (x64) | Latest LTS          |
 
