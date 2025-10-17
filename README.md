@@ -396,7 +396,7 @@ Keep exploring to unlock more Gensyn ecosystem rewards 🚀
 ---
 
 
-<img width="1096" height="862" alt="image" src="https://github.com/user-attachments/assets/08e92366-1c8d-4393-9308-61a27f55e706" />
+
 
 
 
