@@ -85,8 +85,11 @@ cloudflared tunnel --url http://localhost:3000
 ```
 - Then open the HTTPS link shown in your terminal.
 <img width="1754" height="226" alt="image" src="https://github.com/user-attachments/assets/2ae7c569-7f40-4db3-89f4-02562d076dca" />
+
 - Sign up gensyn acc.
 - Done ✅
+
+
 
 💾 Backup Your Node Key open another vps tab
 
