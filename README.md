@@ -9,7 +9,7 @@
 | CPU      | 6 cores                    | **12 cores or more** |
 | RAM      | 16 GB                       | **24 GB**           |
 | Storage  | 100 GB SSD                 | **200–500 GB SSD**  |
-| OS       | Ubuntu 22.04 / 24.04 (x64) | Latest LTS          |
+| OS       | Ubuntu  24.04 (x64)        | Latest LTS          |
 
 
 -  [Buy VPS here (Contabo)](https://contabo.com/en/storage-vps/storage-vps-30/?image=ubuntu.332&qty=1&contract=12)
