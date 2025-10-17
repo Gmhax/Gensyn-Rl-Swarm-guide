@@ -12,7 +12,7 @@
 | OS       | Ubuntu 22.04 / 24.04 (x64) | Latest LTS          |
 
 
-- Can you buy from here — https://contabo.com/en/storage-vps/storage-vps-30/?image=ubuntu.332&qty=1&contract=12
+- Can you buy from here — (https://contabo.com/en/storage-vps/storage-vps-30/?image=ubuntu.332&qty=1&contract=12)
 
 🧱 Pre-Requirements
 
