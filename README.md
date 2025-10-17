@@ -122,7 +122,6 @@ source .venv/bin/activate
 ### Linux/Wsl
 
 ```
-cd ~
 wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
@@ -140,15 +139,6 @@ source ~/.bashrc
 ```
 go version
 ```
-
-
-### Mac
-
-```
-brew install go
-```
-
-
 
 ## 2. Telegram Bot Set-Up 🤖
 
