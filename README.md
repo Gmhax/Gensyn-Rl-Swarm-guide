@@ -230,6 +230,167 @@ gswarm
 ✔️✔️✔️Done:
 
 
+# 🧩 Gensyn AI Block Assist Role Guide
+
+This guide explains how to deploy the **Gensyn Block Assist app** using **Octa.Space VPS** and link it to your **Hugging Face** and **Discord** for verification and rewards.
+
+---
+
+## ⚙️ Requirements
+
+| Resource | Minimum | Recommended |
+|-----------|----------|-------------|
+| GPU       | 1× RTX 3090 24 GB | or any similar GPU |
+| CPU       | 4 cores | 6+ cores |
+| RAM       | 8 GB | 16 GB |
+| Storage   | 50 GB | 100 GB |
+| Token     | 1 OCTA (~$0.30) | For 1-hour VPS rental |
+
+---
+
+## 🧱 Step 1: Create Octa.Space Account
+
+1. Visit 👉 [https://marketplace.octa.space](https://marketplace.octa.space)
+2. **Create an account** and **copy your Octa wallet address.**
+3. **Deposit at least 1 OCTA** token to your Octa wallet address.  
+   You can buy and send OCTA using any exchange like **MEXC**.
+
+---
+
+## 🤖 Step 2: Create Hugging Face Token
+
+1. Visit 👉 [https://huggingface.co](https://huggingface.co)
+2. Sign up or log in.
+3. Go to your **Profile → Settings → Access Tokens.**
+4. Click **“New Token”**  
+   - **Name:** `BlockAssist`  
+   - **Role:** `Write` (important)  
+5. Click **Create**.
+6. **Copy and save the token immediately.**  
+   ⚠️ You won’t see it again. If lost, delete and make a new one.
+
+---
+
+## 🚀 Step 3: Deploy Gensyn Block Assist on Octa.Space
+
+1. Go back to 👉 [https://marketplace.octa.space](https://marketplace.octa.space)
+2. In the search bar, type **“Gensyn”** and select **“Gensyn Block Assist.”**
+3. Click **“VPS”** and select:
+   - **Type:** `1x RTX 3090 24 GB` *(or any available GPU)*
+   - **Duration:** `1 hour`
+   - **Cost:** ≈ `0.3 OCTA ($0.10)`
+4. Click **Configure.**
+
+---
+
+## 🔑 Step 4: Configure the Block Assist App
+
+In the configuration section:
+- You will see a field labeled **“value cannot be empty.”**
+- Paste the following: HF_TOKEN
+<img width="680" height="299" alt="image" src="https://github.com/user-attachments/assets/3fa5ab72-aed5-4461-ab73-4fa0a3aefee2" />
+<img width="360" height="195" alt="image" src="https://github.com/user-attachments/assets/64fa986c-e3cb-4e59-9a7a-9a54eae16be0" />
+
+- In the **“value” box**, paste your **Hugging Face token** you created earlier.
+- Click **Deploy.**
+
+> 💡 If it asks to select an app, choose **“Gensyn Block Assist.”**  
+> If not shown, ignore and continue.
+
+---
+
+## ⏳ Step 5: Wait for VPS to Launch
+
+- Wait **1–2 minutes** after deployment.
+- Then click your deployed VPS → click the **HTTPS link**.  
+It will open the **Gensyn Block Assist** interface.  
+(It might take another 1–2 minutes to fully load.)
+
+---
+
+## 🎮 Step 6: Play Minecraft (Recording Session)
+<img width="680" height="367" alt="image" src="https://github.com/user-attachments/assets/d9d72fd4-c1f9-4a88-a18d-c7420d249322" />
+
+Once the app loads:
+
+1. Log in — two **Minecraft** windows will open automatically.
+2. Wait for the **command window** to appear.
+3. Press **ENTER** — this starts the **recording timer**.
+4. Go to the **first Minecraft window** and play for **1–2 minutes**.
+5. After playing, return to the command window.
+6. Press **ENTER** three (3) times.  
+ → All windows will close automatically.
+
+
+---
+
+## 💾 Step 7: Verify Your Hugging Face Model
+
+1. Go back to 👉 [https://huggingface.co](https://huggingface.co)
+2. Open your **Profile** page.  
+ You’ll now see a new **BlockAssist model** listed.
+3. Click it and **copy the full browser URL** (e.g. `https://huggingface.co/username/blockassist`).
+
+---
+
+## 💬 Step 8: Verify in Discord
+
+> ⚠️ You **must already have the Swarm role** from the RL-Swarm setup before continuing.
+
+### 1️⃣ Verify Hugging Face Token
+- Go to the **#links-access** channel in Discord.
+- Type: /verify-huggingface
+- When asked, paste your **Hugging Face token**.
+
+### 2️⃣ Verify Block Assist
+- Go to the **#the-swarm** channel.
+- Type: /verify-block
+- When asked, paste your **Hugging Face BlockAssist model link**.
+
+✅ Within a minute, you’ll receive your **Block Assist role**.
+
+You should now have:
+✅ Swarm Role
+✅ Block Role
+✅ 1-Day Gensyn Node Uptime via Octa VPS
+
+---
+
+## 🧹 Step 9: Stop the VPS (After Role is Granted)
+
+Once your Discord role is confirmed:
+- Go to your Octa dashboard.
+- Click **“Stop Session”** for the VPS you deployed.  
+  → No need to keep your laptop or VPS running afterward.
+
+---
+
+## ⚠️ Troubleshooting
+
+| Issue | Solution |
+|--------|-----------|
+| ❌ VPS stuck on “loading” | Wait 2–3 minutes, then refresh. If still stuck after 5 minutes, stop and redeploy. |
+| ⚠️ Terminated / Killed | Your VPS ran out of memory (OOM). Use a higher-RAM plan (16 GB+). |
+| 💀 No Hugging Face model appears | Wait 2–5 minutes, then refresh your Hugging Face profile. |
+| 🕹️ Minecraft windows won’t open | Make sure GPU VPS was used (RTX 3090 or similar). |
+
+---
+
+## 🎯 Done!
+
+You have now successfully:
+- ✅ Verified Swarm node  
+- ✅ Earned Block Assist role  
+- ✅ Linked Hugging Face + Discord  
+- ✅ Completed 1-day Gensyn uptime via Octa.Space  
+
+Keep exploring to unlock more Gensyn ecosystem rewards 🚀
+
+---
+
+
+
+
 
 
 
