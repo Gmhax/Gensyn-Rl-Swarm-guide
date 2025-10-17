@@ -293,13 +293,11 @@ In the configuration section:
 - Paste the following: HF_TOKEN
 <img width="680" height="299" alt="image" src="https://github.com/user-attachments/assets/3fa5ab72-aed5-4461-ab73-4fa0a3aefee2" />
 
-<img width="360" height="195" alt="image" src="https://github.com/user-attachments/assets/64fa986c-e3cb-4e59-9a7a-9a54eae16be0" />
+<img width="1280" height="692" alt="image" src="https://github.com/user-attachments/assets/c9fa3704-31e9-4fc5-99bb-6334473f0c8b" />
+
 
 - In the **“value” box**, paste your **Hugging Face token** you created earlier.
 - Click **Deploy.**
-
-> 💡 If it asks to select an app, choose **“Gensyn Block Assist.”**  
-> If not shown, ignore and continue.
 
 ---
 
