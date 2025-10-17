@@ -291,12 +291,14 @@ This guide explains how to deploy the **Gensyn Block Assist app** using **Octa.S
 In the configuration section:
 - You will see a field labeled **“value cannot be empty.”**
 - Paste the following: HF_TOKEN
-<img width="680" height="299" alt="image" src="https://github.com/user-attachments/assets/3fa5ab72-aed5-4461-ab73-4fa0a3aefee2" />
 
-<img width="1280" height="692" alt="image" src="https://github.com/user-attachments/assets/c9fa3704-31e9-4fc5-99bb-6334473f0c8b" />
+<img width="1280" height="563" alt="image" src="https://github.com/user-attachments/assets/45401b24-927f-4115-861d-c53be9787a97" />
 
 
 - In the **“value” box**, paste your **Hugging Face token** you created earlier.
+
+<img width="1280" height="692" alt="image" src="https://github.com/user-attachments/assets/c9fa3704-31e9-4fc5-99bb-6334473f0c8b" />
+
 - Click **Deploy.**
 
 ---
