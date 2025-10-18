@@ -119,6 +119,26 @@ deactivate
 rm -rf .venv && python3 -m venv .venv && source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
+- still using Node.js v18, even though you’ve already updated to v20.
+<img width="1194" height="872" alt="image" src="https://github.com/user-attachments/assets/5e6b09d9-0344-4aab-9b04-3e3abb02f36c" />
+
+✅ Solution (Fix Node Version to 20+)
+```
+# 1️⃣ Remove old Node.js version
+sudo apt remove -y nodejs
+
+# 2️⃣ Install Node.js 20 again
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# 3️⃣ Verify correct version
+node -v
+```
+
+Output should be: 
+```v20.18.0  (or higher)```
+
+
 
 🧩How To Grab Your Gswarm Role:
 - You can do this process both in ubuntu or codespace
@@ -233,7 +253,8 @@ gswarm
 
 * After verify your code You will automatically get your Role:
 
-<img width="2086" height="1241" alt="image" src="https://github.com/user-attachments/assets/d8ec9220-26a7-4809-ad38-71173063260e" />
+<img width="1596" height="797" alt="image" src="https://github.com/user-attachments/assets/050b4be4-7175-461c-9133-c88e17d12663" />
+
 
 
 ✔️✔️✔️Done:
