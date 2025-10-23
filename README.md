@@ -70,7 +70,7 @@ source .venv/bin/activate
 
 - Push models to Hugging Face? → N
 - Enter model name or press Enter for default → just press Enter
-- Participate in AI Prediction Market? → N
+- Participate in AI Prediction Market? → Y
 
 ✅ Done! Your node is now running successfully.
 
