@@ -85,6 +85,7 @@ sudo apt install -y ufw
 sudo ufw allow 22
 sudo ufw allow 3000/tcp
 sudo ufw enable
+screen -S cloudflared
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
 sudo dpkg -i cloudflared-linux-amd64.deb
 cloudflared tunnel --url http://localhost:3000
@@ -92,6 +93,7 @@ cloudflared tunnel --url http://localhost:3000
 - Then open the HTTPS link shown in your terminal.
 <img width="1754" height="226" alt="image" src="https://github.com/user-attachments/assets/2ae7c569-7f40-4db3-89f4-02562d076dca" />
 
+- Ctrl a+d
 - Sign up gensyn acc.
 - Done ✅
 
