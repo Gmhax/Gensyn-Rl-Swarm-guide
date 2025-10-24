@@ -326,7 +326,8 @@ In the configuration section:
 
 - In the **“value” box**, paste your **Hugging Face token** you created earlier.
 
-<img width="1280" height="692" alt="image" src="https://github.com/user-attachments/assets/c9fa3704-31e9-4fc5-99bb-6334473f0c8b" />
+<img width="1849" height="813" alt="image" src="https://github.com/user-attachments/assets/d3a452fc-35c1-4a9c-bd17-487eee6f2eca" />
+
 
 - Click **Deploy.**
 
