@@ -1,4 +1,4 @@
-# 💻 Gensyn AI RL-Swarm + Block Assist Complete Linux Guide
+I# 💻 Gensyn AI RL-Swarm + Block Assist Complete Linux Guide
 
 ## Comprehensive setup guide for Gensyn AI  includes full instructions for RL-Swarm node, Telegram alerts, Swarm role verification, and Block Assist role completion via Octa.Space.
 
@@ -136,6 +136,9 @@ sudo apt install -y nodejs
 # 3️⃣ Verify correct version
 node -v
 ```
+-
+
+```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash && export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install 20.19.0 && nvm alias default 20.19.0 && nvm use default && bash run_rl_swarm.sh```
 
 Output should be: 
 ```v20.18.0  (or higher)```
